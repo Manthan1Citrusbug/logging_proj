@@ -135,7 +135,7 @@ LOGGING ={
         'file':{
             'level':'INFO',
             'class': 'logging.FileHandler',
-            'filename':f'./logs/{date.today()+timedelta(days=1)}_logger2.log',
+            'filename':f'./logs/{date.today()}_logger2.log',
             'formatter':'simpleRe',
         },
     },
