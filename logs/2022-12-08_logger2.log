@@ -1,0 +1,9 @@
+INFO 2022-12-08 17:19:30,757 autoreload 13204 11848 Watching for file changes with StatReloader
+INFO 2022-12-08 17:22:54,426 autoreload 13204 11848 C:\Users\Citrusbug\Desktop\Manthan_Django_Learning\Django_app-logging\logging_proj\logging_proj\settings.py changed, reloading.
+INFO 2022-12-08 17:25:32,751 autoreload 13040 2444 Watching for file changes with StatReloader
+INFO 2022-12-08 17:26:05,462 basehttp 13040 1348 "GET /auth/login/ HTTP/1.1" 200 3001
+INFO 2022-12-08 17:26:05,496 basehttp 13040 1348 "GET /static/auth/login.js HTTP/1.1" 304 0
+INFO 2022-12-08 17:26:18,302 views 13040 1348 Get User Data
+INFO 2022-12-08 17:26:18,634 views 13040 1348 User Login Successfully
+INFO 2022-12-08 17:26:18,641 basehttp 13040 1348 "POST /auth/login/ HTTP/1.1" 200 45
+INFO 2022-12-08 17:28:10,071 autoreload 13040 2444 C:\Users\Citrusbug\Desktop\Manthan_Django_Learning\Django_app-logging\logging_proj\logging_proj\settings.py changed, reloading.

@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,14 +24,16 @@
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form action="" method="POST">
+                {%  csrf_token %}
                 <h1>Create Account</h1>
 
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <input type="text" placeholder="Name" id="signUpFormName" />
+                <input type="email" placeholder="Email" id="signUpFormEmail"/>
+                <input type="password" placeholder="Password" id="signUpFormPass" />
+                <span class="danger" id="SignUpError"></span>
+                <button type="button" id="SignUpForm">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
@@ -38,10 +41,11 @@
                 <h1>Sign in</h1>
 
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" placeholder="Email" id="signInFormEmail" />
+                <input type="password" placeholder="Password" id="signInFormPass" />
+                <span class="danger" id="SignInError"></span>
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button type="button" id="SignInForm">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
@@ -59,6 +63,8 @@
             </div>
         </div>
     </div>
+    <script> const signUpURL = "{% url 'auth:signup' %}";</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="{% static 'auth/login.js' %}"></script>
 </body>
 </html>
